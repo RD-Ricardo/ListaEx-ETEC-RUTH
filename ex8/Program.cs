@@ -1,0 +1,14 @@
+﻿double pag, he,me,hs,ms;
+Console.WriteLine("---------------------------------");
+Console.WriteLine("- Calcular Valor estacionamento -");
+Console.WriteLine("---------------------------------");
+Console.Write("Digite a hora de ENTRADA: ");
+he = Convert.ToDouble(Console.ReadLine());
+Console.Write("Digite o minuto de ENTRADA: ");
+me = Convert.ToDouble(Console.ReadLine());
+Console.Write("\nDigite a hora de SAIDA: ");
+hs = Convert.ToDouble(Console.ReadLine());
+Console.Write("Digite o minuto de SAIDA: ");
+ms = Convert.ToDouble(Console.ReadLine());
+pag = ((60 * (hs - he)) + (ms - me)) / 60 * 4;
+Console.WriteLine($"\nO Valor a ser pago é de ${pag}");

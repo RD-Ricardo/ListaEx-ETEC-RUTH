@@ -1,0 +1,10 @@
+﻿double precoPrdoduto, desc, precoDes;
+Console.WriteLine("--------------------------");
+Console.WriteLine("- Desconto de um produto -");
+Console.WriteLine("--------------------------");
+Console.Write("\nDigite o preço do produto: ");
+precoPrdoduto = Convert.ToDouble(Console.ReadLine());
+Console.Write("\nDigite o preço do produto depois do desconto: ");
+precoDes  =  Convert.ToDouble(Console.ReadLine());
+desc  = ( precoPrdoduto - precoDes ) / precoPrdoduto * 100;
+Console.WriteLine($"O produto teve um desconto de {desc}%");
